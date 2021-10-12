@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>disconnect.png</file>
+        <file>clear.png</file>
+        <file>connect.png</file>
+        <file>delete.png</file>
+        <file>settings.png</file>
+    </qresource>
+</RCC>

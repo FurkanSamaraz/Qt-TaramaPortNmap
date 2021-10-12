@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Seri Bağlantı</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLCDNumber" name="lcdNumber">
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(0, 0, 0);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 1px;
+    font: bold 15px;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Host</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditHost">
+            <property name="styleSheet">
+             <string notr="true">
+color: rgb(170, 170, 170);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 1px;
+    font: bold 15px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Başlangıç Portu</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditStartPort">
+            <property name="styleSheet">
+             <string notr="true">
+color: rgb(170, 170, 170);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 1px;
+    font: bold 15px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Bitiş Portu</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditEndPort">
+            <property name="styleSheet">
+             <string notr="true">
+color: rgb(170, 170, 170);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 1px;
+    font: bold 15px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Zaman</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditTimeout">
+            <property name="styleSheet">
+             <string notr="true">
+color: rgb(170, 170, 170);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 1px;
+    font: bold 15px;</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTextEdit" name="results"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="on_actionclear_triggered"/>
+   <addaction name="on_actionA_k_triggered"/>
+   <addaction name="on_actionAyarlar_triggered"/>
+   <addaction name="on_actionKapat_triggered"/>
+  </widget>
+  <action name="on_actionclear_triggered">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/clear.png</normaloff>:/new/prefix1/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>a</string>
+   </property>
+  </action>
+  <action name="on_actionA_k_triggered">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/connect.png</normaloff>:/new/prefix1/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>b</string>
+   </property>
+  </action>
+  <action name="on_actionKapat_triggered">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/delete.png</normaloff>:/new/prefix1/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>c</string>
+   </property>
+  </action>
+  <action name="on_actionAyarlar_triggered">
+   <property name="icon">
+    <iconset resource="image.qrc">
+     <normaloff>:/new/prefix1/settings.png</normaloff>:/new/prefix1/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>e</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
